@@ -1,12 +1,16 @@
 # Potato disease detection using deep learning
 
+
 ### Motivation
 
-Most of my work involves tabular ML models and text classification using LLMs via API services like AWS Bedrock. In this project I wantto to expand my toolkit by exploring image classification, particularly understanding how convolutional neural networks work, as well as pooling layers and augmentation techniques to get practical experience with TensorFlow and Keras.
+Most of my work involves building ML models from tabular data, but many real-world problems are fundamentally visual. I want to understand how image data changes the modelling approach, particularly what makes convolutional architectures effective where traditional neural networks struggle.
 
-I chose the potato disease detection problem as a practical starting point. If successful, I plan to apply transfer learning to tomato disease classification to help identify issues early in my own backyard garden.
+Agricultural disease detection is interesting to me because it combines accessible data with genuine impact. Small-scale farmers often lack the resources for early disease intervention, yet timely detection can mean the difference between a productive season and crop failure. The PlantVillage dataset provides pre-labelled images of healthy and diseased plants across various vegetables, making it a good starting point for understanding the full pipeline from raw images to a deployed classification system as a POC from scratch.
 
-Again we will be following an ML development cycle from problem framing through to deployment, working with a multi-class image classification problem that has real agricultural applications.
+Beyond just building a working model, I wanted to explore the architectural decisions that matter in production: how pooling layers reduce computational cost whilst preserving spatial features, how data augmentation addresses the challenge of limited training data, and how model architecture choices affect deployment constraints like inference speed and memory footprint.
+
+This project again follows the ML development cycle from problem framing through to deployment considerations, treating image classification not just as a technical exercise but as a practical system that needs to work reliably in real agricultural contexts. ML lifecycle [Deign, Model, Deploy]
+
 
 ## Dataset Classes
 
