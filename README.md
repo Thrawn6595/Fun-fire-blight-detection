@@ -1,8 +1,14 @@
-# Fun-fire-blight-detection
+# Potato disease detection using deep learning
 
-Using deep learning image classification to detect disease in Potatoes, plus ML end to end deployment
+### Motivation
 
-## 🌿 Dataset Classes
+Most of my work involves tabular ML models and text classification using LLMs via API services like AWS Bedrock. In this project I wantto to expand my toolkit by exploring image classification, particularly understanding how convolutional neural networks work, as well as pooling layers and augmentation techniques to get practical experience with TensorFlow and Keras.
+
+I chose the potato disease detection problem as a practical starting point. If successful, I plan to apply transfer learning to tomato disease classification to help identify issues early in my own backyard garden.
+
+Again we will be following an ML development cycle from problem framing through to deployment, working with a multi-class image classification problem that has real agricultural applications.
+
+## Dataset Classes
 
 This project classifies potato leaf images into three categories:
 
