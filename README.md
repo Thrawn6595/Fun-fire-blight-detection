@@ -66,7 +66,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## Author
 
-**Adama Abanteriba**
+**Adama Abanteriba Richards**
 - GitHub: [@Thrawn6595](https://github.com/Thrawn6595)
 - Project: [Fun-fire-blight-detection](https://github.com/Thrawn6595/Fun-fire-blight-detection)
 
