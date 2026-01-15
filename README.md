@@ -1,15 +1,23 @@
 # Potato disease detection using deep learning
 
 
-### Motivation
+## Motivation
 
-Most of my work involves building ML models from tabular data, but many real-world problems are fundamentally visual. I want to understand how image data changes the modelling approach, particularly what makes convolutional architectures effective where traditional neural networks struggle.
+Most of my work involves building ML models from tabular data, but many interesting problems require working with image data. I want to understand what makes the combination of convolutional architectures and neural networks effective at image classification and apply it to an actual business problem, in this case agricultural disease detection in potato plants.
 
-Agricultural disease detection is interesting to me because it combines accessible data with genuine impact. Small-scale farmers often lack the resources for early disease intervention, yet timely detection can mean the difference between a productive season and crop failure. The PlantVillage dataset provides pre-labelled images of healthy and diseased plants across various vegetables, making it a good starting point for understanding the full pipeline from raw images to a deployed classification system as a POC from scratch.
+I have chosen the PlantVillage dataset for this project as it provides pre-labelled images of healthy and diseased plants across various vegetables, making it a good starting point for understanding the full pipeline from raw image ingestion and processing to feature extraction and disease classification.
 
 Beyond just building a working model, I wanted to explore the architectural decisions that matter in production: how pooling layers reduce computational cost whilst preserving spatial features, how data augmentation addresses the challenge of limited training data, and how model architecture choices affect deployment constraints like inference speed and memory footprint.
 
-This project again follows the ML development cycle from problem framing through to deployment considerations, treating image classification not just as a technical exercise but as a practical system that needs to work reliably in real agricultural contexts. ML lifecycle [Deign, Model, Deploy]
+### Situation
+
+Small-scale farmers often lack the resources for early disease intervention, yet timely detection can mean the difference between a productive season and crop failure. Similarly, amateur backyard gardeners could benefit from accessible tools that help identify plant health issues before they spread. A mobile application that accepts a plant photo and returns a disease classification could democratise access to agricultural expertise.
+
+### Solution
+
+A convolutional neural network trained on the PlantVillage dataset to classify potato leaf images into three categories: healthy, early blight, and late blight. The model architecture balances accuracy with deployment constraints, considering inference speed and memory requirements for potential mobile deployment.
+
+The project explores both training approaches from scratch and leveraging pre-trained models to understand the trade-offs between custom architectures and transfer learning. Success means achieving classification accuracy that would be  useful for farmers whilst maintaining fast enough inference for real-time mobile use.
 
 
 ## Dataset Classes
